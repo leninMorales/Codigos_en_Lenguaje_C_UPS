@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main ()
+{
+	int a,b;
+	float x;
+	printf ("ingrese a:");
+	scanf("%d",&a);
+	printf ("ingrese b:");
+	scanf("%d",&b);
+	if (a!=0)
+	{
+		x=-b/a;
+		printf ("%f",x);
+	}
+	else
+	{
+		if(b!=0)
+		{
+			printf ("solucion imposible");
+        }   
+        else
+        {
+        printf ("solucion imposible");	
+		}
+	}
+	getch ();
+	return 0;
+}
