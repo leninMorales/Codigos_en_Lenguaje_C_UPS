@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main() 
+{
+	int nota;
+	printf("Ingrese la calificacion:\n");
+	scanf("%d",&nota);
+	if ((nota>=0 && nota<4)) 
+	{
+		printf("INSUFICIENTE\n");
+	}
+	if ((nota>=4 && nota<6)) 
+	{
+		printf("REGULAR\n");
+	}
+	if ((nota>=6 && nota<8)) 
+	{
+		printf("BUENO\n");
+	}
+	if ((nota>=8 && nota<10)) 
+	{
+		printf("MUY BUENO\n");
+	}
+	if ((nota<0 && nota>10)) 
+	{
+		printf("NO VALIDA\n");
+	}
+	getch ();
+	return 0;
+}
