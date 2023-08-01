@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+
+int main ()
+{
+	int n;
+	float resultado,resultado2,resultado3,resultado4;
+	printf ("ingrese numero");
+	scanf ("%d",&n);
+	resultado=log(n);
+	resultado2=sin(n);
+	resultado3=cos(n);
+	resultado4=tan(n);
+	printf ("la respuesta del logaritmo :%f\n", resultado);
+		printf ("la respuesta del seno :%f\n", resultado2);
+			printf ("la respuesta del coseno :%f\n", resultado3);
+				printf ("la respuesta del logaritmo :%f\n", resultado4);
+	getch ();
+	return 0;
+
+}
