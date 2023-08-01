@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int i, N;
+	printf("ingrese el valor de N:");
+	scanf("%d",&N);
+	
+	i=100;
+	while(i>=N)
+	{
+		printf("%d-",i);
+		i=i-2;
+	}
+	getch ();
+	return 0;
+}
