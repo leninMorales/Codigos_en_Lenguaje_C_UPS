@@ -1,0 +1,16 @@
+
+#include<stdio.h>
+int main() 
+{
+	float altura1;
+	float base1;
+	float multiplicar;
+	printf("Ingrese la base\n");
+	scanf("%f",&base1);
+	printf("Ingrese la altura\n");
+	scanf("%f",&altura1);
+	multiplicar = (base1*altura1)/2;
+	printf("El area es:%f\n",multiplicar);
+	getch ();
+	return 0;
+}
