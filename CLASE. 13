@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int A,B,C;
+    printf("Ingrese primer numero");
+    scanf("%d",&A);
+    printf("Ingrese segundo numero");
+    scanf("%d",&B);
+    printf("Ingrese tercer numero");
+    scanf("%d",&C);
+    if(A>B && A>C)
+    {
+        printf("%d es mayor",A);
+    }
+    if(B>A && B>C)
+    {
+        printf("%d es mayor",B);
+    } 
+    if(C>A && C>B)
+    {
+        printf("%d es mayor",C);
+    }
+    getch();
+    return 0;
+}
