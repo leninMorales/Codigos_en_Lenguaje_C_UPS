@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+	int anio;
+	char nombre, apellido;
+	int edad;
+	printf("ingrese el nombre\n");
+	scanf("%s",&nombre);
+	printf("ingrese apellido\n");
+	scanf("%s",&apellido);
+	printf("ingrese año de nacimiento\n");
+	scanf("%f",&anio);
+	edad = 2023-anio;
+	printf("%s\n",nombre);
+	printf("%s\n",apellido);
+	printf("%d\n",edad);
+	getch ();
+	return 0;
+}
