@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    float a, b, c;
+
+    printf("Ingrese tres números diferentes: ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    if (a > b) {
+        if (b > c) {
+            printf("Máximo: %.2f\n", a);
+            printf("Mínimo: %.2f\n", c);
+        } else {
+            if (c > a) {
+                printf("Máximo: %.2f\n", c);
+                printf("Mínimo: %.2f\n", b);
+            } else {
+                printf("Máximo: %.2f\n", a);
+                printf("Mínimo: %.2f\n", b);
+            }
+        }
+    } else {
+        if (a > c) {
+            printf("Máximo: %.2f\n", b);
+            printf("Mínimo: %.2f\n", c);
+        } else {
+            if (c > b) {
+                printf("Máximo: %.2f\n", c);
+                printf("Mínimo: %.2f\n", a);
+            } else {
+                printf("Máximo: %.2f\n", b);
+                printf("Mínimo: %.2f\n", a);
+            }
+        }
+    }
+    getch();
+    return 0;
+}
