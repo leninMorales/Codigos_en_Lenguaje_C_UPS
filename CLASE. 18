@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+	int A,B,C,D,X1,X2,R,I;
+	printf("Escriba el valor de los 3 Coefivientes:");
+	scanf("%d %d %d", &A, &B, &C);
+	if ( A==0 )
+	{
+		printf("NO es ecuacion de Segundo Grado");
+	}
+	else
+	{
+		D=B*B-4*A*C ;
+	}
+	if (D==0)
+	{
+		X1= -B/ (2*A);
+		X2= X1 ;
+		printf("%d %d", X1, X2);
+	}
+	else
+	{
+		if (D>0)
+		{
+			X1=(-B+sqrt(D))/(2*A);
+			X2=(-B-sqrt(D))/(2*A);
+			printf("%d %d", X1,X2);	
+		}
+		else
+		{
+			R=(-B)/(2*A);
+			I=sqrt(abs(D)/(2*A));
+			printf("%d %d %d", R, + I, I);
+			printf("%d %d %d", R, - I, I);
+		}
+	}
+	
+	getch ();
+	return 0;
+}
