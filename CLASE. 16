@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main() 
+{
+	float horas,impuestos,pagabruta,paganeta,tarifa,tasa;
+	printf("Ingrese las horas trabajadas\n");
+	scanf("%f",&horas);
+	printf("Ingrese la tarifa\n");
+	scanf("%f",&tarifa);
+	printf("Ingrese la tasa\n");
+	scanf("%f",&tasa);
+	pagabruta = horas*tarifa;
+	impuestos = (pagabruta*tasa)/100;
+	paganeta = pagabruta-impuestos;
+	printf("El pago sin restar impuestos:%f\n",pagabruta);
+	printf("El valor del impuesto es:%f\n",impuestos);
+	printf("El pago final es:%f\n",paganeta);
+	getch ();
+	return 0;
+}
