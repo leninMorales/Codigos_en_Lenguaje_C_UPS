@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+ int A,B,Aux;
+ A=10;
+ B=15;
+ printf("Valores Originales A:%d,B%d",A,B);
+ Aux=A;
+ A=B;
+ B=Aux;
+ printf("Valores Intercambiados A:%d,B:%d",A,B);
+ getch();
+ return 0;
+}
