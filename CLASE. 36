@@ -1,0 +1,45 @@
+#include <stdio.h>
+int main() 
+{
+    int n, i, countPositivos = 0, countNegativos = 0;
+    float num, sumaPositivos = 0, sumaNegativos = 0;
+    printf("Ingrese la cantidad de números : ");
+    scanf("%d", &n);
+    for (i = 0; i < n; i++) 
+	{
+        printf("Ingrese el número %d: ", i+1);
+        scanf("%f", &num);
+        if (num > 0) 
+		{
+            sumaPositivos += num;
+            countPositivos++;
+        }
+		else if (num < 0) 
+		{
+            sumaNegativos += num;
+            countNegativos++;
+        }
+    }
+    if (countPositivos > 0) 
+	{
+        float promedioPositivos = sumaPositivos / countPositivos;
+        printf("El promedio de los números positivos es: %.2f\n", promedioPositivos);
+    } 
+	else 
+	{
+        printf("No se ingresaron números positivos.\n");
+    }
+
+    if (countNegativos > 0) 
+	{
+        float promedioNegativos = sumaNegativos / countNegativos;
+        printf("El promedio de los números negativos es: %.2f\n", promedioNegativos);
+    } 
+	else 
+	{
+        printf("No se ingresaron números negativos.\n");
+    }
+    getch (); 
+    return 0;
+}
+
