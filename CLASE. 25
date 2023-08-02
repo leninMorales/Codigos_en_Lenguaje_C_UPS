@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int i=1,N,edades,suma=0,suma2=0,num;
+    printf("Ingrese el número:");
+    scanf("%d",&N );
+    i=1;
+    while(i<=N)
+    {
+        printf("Ingrese los numeros [%d]",i);
+        scanf("%d",&num);
+        if (num%2==0)
+        {
+        suma=suma+1;
+        
+        }
+        else
+        {
+           suma2=suma2+1;  
+        }
+        i=i+1;
+    }
+ printf("Numeros pares: %d",suma);
+ printf("\nNumeros impares: %d",suma2);
+ getch();
+ return 0 ;
+}
