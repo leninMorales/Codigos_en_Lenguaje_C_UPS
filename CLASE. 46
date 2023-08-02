@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main ()
+{
+    int i,a,b,suma;
+    printf("Ingrese el valor de a: ");
+    scanf ("%d", &a);
+    printf("Ingrese el valor de b: ");
+    scanf("%d", &b);
+    i=a;
+    suma=a+b;
+    do
+    {
+        printf("%d, ", i);
+        i=i+1;
+        suma=a+b;
+    }
+    while (i<=b);
+    printf("La suma de a y b son: %d",suma);
+    getch();
+    return 0;
+}
