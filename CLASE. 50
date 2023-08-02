@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int n,i,edad, contador_mayores = 0, contador_menores = 0;
+
+    printf("Ingrese el número de edades: ");
+    scanf("%d", &n);
+
+    printf("Ingrese las edades una por una:\n");
+
+    for ( i =0; i < n; i++) 
+    {
+        printf("Edad %d: ", i + 1);
+        scanf("%d", &edad);
+
+        if (edad >= 18)
+        {
+            contador_mayores++;
+        } 
+        else 
+        {
+            contador_menores++;
+        }
+    }
+
+    printf("\nTotal de mayores de edad: %d\n", contador_mayores);
+    printf("Total de menores de edad: %d\n", contador_menores);
+    
+    getch();
+    return 0;
+}
