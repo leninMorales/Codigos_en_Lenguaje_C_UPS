@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    double suma = 0.0;
+
+    printf("Ingrese el valor de n: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++) {
+        if (i % 2 == 0) {
+            suma -= 1.0 / i;
+        } else {
+            suma += 1.0 / i;
+        }
+    }
+
+    printf("La suma de los %d términos de la serie es: %lf\n", n, suma);
+    getch ();
+    return 0;
+}
