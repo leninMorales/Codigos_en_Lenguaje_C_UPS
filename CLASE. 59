@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main() 
+{
+	int num,suma;
+	suma = 0;
+	scanf("%d",&num);
+	suma = suma+num;
+	printf("La suma es:%d\n",suma);
+	scanf("%d",&num);
+	suma = suma+num;
+	printf("La suma es:%d\n",suma);
+	scanf("%d",&num);
+	suma = suma+num;
+	printf("La suma es:%d\n",suma);
+	getch ();
+	return 0;
+}
