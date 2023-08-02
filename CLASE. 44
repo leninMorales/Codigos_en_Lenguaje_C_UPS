@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() 
+{
+    int n, i, inicio = 17, termino = inicio;
+    printf("Ingrese el número de términos a imprimir: ");
+    scanf("%d", &n);
+    printf("Sucesión de números:\n");
+    for (i = 0; i < n; i++) 
+	{
+        printf("%d\t", termino);
+        if (i % 2 == 0) 
+		{
+            termino += 2;
+        } 
+		else 
+		{
+            termino += 1;
+        }
+    }
+    printf("\n");
+    getch ();
+    return 0;
+}
