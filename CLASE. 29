@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() 
+{
+    int M, N, i, sumatoria = 0;
+
+    printf("Ingrese el valor de M: ");
+    scanf("%d", &M);
+
+    printf("Ingrese el valor de N: ");
+    scanf("%d", &N);
+
+    for (i = M; i <= N; i++) 
+	{
+        sumatoria += i;
+    }
+
+    printf("La sumatoria es %d a %d es: %d\n", M, N, sumatoria);
+    
+    getch ();
+    return 0;
+}
