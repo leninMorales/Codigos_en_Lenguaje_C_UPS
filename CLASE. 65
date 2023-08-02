@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{ 
+	int i,n,fact;
+	printf("Ingrese el numero n:");
+	scanf("%d",&n);
+	fact=1;
+	printf("0!=%d\n",fact);
+	for(i=1;i<=n;i++)
+	{
+		fact=fact*i;
+		printf("%d!=%d\n",i,fact);
+	}
+	
+	getch();
+    return 0;
+}
