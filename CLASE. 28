@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int N, i, P;
+    P = 1; 
+    printf("Ingrese un número : ");
+    scanf("%d", &N);
+
+    for (i = 1; i <= N; i++) 
+	{
+        P *= i;
+    }
+
+    printf("El producto de 1 a %d es: %d\n", N, P);
+    getch ();
+    return 0;
+}
