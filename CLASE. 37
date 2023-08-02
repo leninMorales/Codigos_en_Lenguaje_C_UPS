@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() 
+{
+    int n, i, num, mayor, menor;
+    printf("Ingrese la cantidad de números a evaluar: ");
+    scanf("%d", &n);
+    printf("Ingrese el número 1: ");
+    scanf("%d", &num);
+    mayor = menor = num;
+    for (i = 2; i <= n; i++) 
+	{
+        printf("Ingrese el número %d: ", i);
+        scanf("%d", &num);
+        if (num > mayor) 
+		{
+            mayor = num;
+        }
+        if (num < menor) 
+		{
+            menor = num;
+        }
+    }
+
+    printf("El mayor número ingresado es: %d\n", mayor);
+    printf("El menor número ingresado es: %d\n", menor);
+    getch ();
+    return 0;
+}
