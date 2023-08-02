@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int i,j,N,M;
+	printf("Ingrese el valor de N:");
+	scanf("%d",&N);
+	printf("Ingrese el valor de M:");
+	scanf("%d",&M);
+	for(i=1;i<=N;i++)
+	{
+		printf("i=%d\n",i);
+		for(j=1;j<=M;j++)
+		{
+			printf("j=%d,",j);
+		}
+		printf("\n");			
+	}
+	getch();
+    return 0;
+}
