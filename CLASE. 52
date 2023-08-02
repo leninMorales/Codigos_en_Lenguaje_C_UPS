@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    float nota, suma = 0, promedio;
+
+    printf("Ingrese el número de notas: ");
+    scanf("%d", &n);
+
+    printf("Ingrese las notas una por una:\n");
+
+    for (i = 0; i < n; i++) 
+    {
+        printf("Nota %d: ", i + 1);
+        scanf("%f", &nota);
+
+        suma += nota;
+    }
+
+    promedio = suma / n;
+
+    printf("\nSuma de las notas: %.2f\n", suma);
+    printf("Promedio de las notas: %.2f\n", promedio);
+    getch();
+
+    return 0;
+}
