@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <math.h>
+int i;
+double calcularFactorial(int num) 
+{
+    double fact = 1;
+    for (i = 1; i <= num; i++) 
+	{
+        fact *= i;
+    }
+    return fact;
+}
+
+double calcularSumatoria(double x, int n) 
+{
+    double sumatoria = 1.0;
+    double termino;
+    
+    for ( i = 1; i <= n; i++) 
+	{
+        termino = pow(x, i) / calcularFactorial(i);
+        sumatoria += termino;
+    }
+    
+    return sumatoria;
+}
+
+int main() 
+{
+    double x;
+    int n;
+    
+    printf("Ingrese el valor de x: ");
+    scanf("%lf", &x);
+    
+    printf("Ingrese el valor de n: ");
+    scanf("%d", &n);
+    
+    double resultado = calcularSumatoria(x, n);
+    printf("El resultado de la sumatoria es: %.4lf\n", resultado);
+    getch ();
+    return 0;
+}
+
