@@ -1,0 +1,35 @@
+#include <stdio.h>
+int main() 
+{
+    int n, i, num, sumaPares = 0, contadorPares = 0, sumaImpares = 0, contadorImpares = 0;
+    float mediaImpares;
+    printf("Ingrese la cantidad de números: ");
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++) 
+	{
+        printf("Ingrese el número %d: ", i);
+        scanf("%d", &num);
+
+        if (num % 2 == 0) 
+		{
+            sumaPares += num;
+            contadorPares++;
+        } 
+		else 
+		{
+            sumaImpares += num;
+            contadorImpares++;
+        }
+    }
+    if (contadorImpares > 0) 
+	{
+        mediaImpares = (float)sumaImpares / contadorImpares;
+    } else {
+        mediaImpares = 0;
+    }
+    printf("La suma de los números pares es: %d\n", sumaPares);
+    printf("La cantidad de números pares es: %d\n", contadorPares);
+    printf("La media de los números impares es: %.2f\n", mediaImpares);
+    getch ();
+    return 0;
+}
