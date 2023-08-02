@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int i,n,num,contadorp,contadorn;
+    printf("Ingrese la cantidad de números: ");
+    scanf("%d",&n);
+    contadorp=0;
+    contadorn=0;
+    for(i=1;i<=n;i=i+1)
+    {
+        printf("Ingrese el número: ",i);
+        scanf("%d",&num);
+        if(num>0)
+        {
+            contadorp=contadorp+1;
+        }
+        if(num<0)
+        {
+            contadorn=contadorn+1;
+        }
+    }
+    printf("La cantidad de números positivos es: %d",contadorp);
+    printf("\nLa cantidad de números negativos es: %d",contadorn);
+    getch();
+    return 0;
+}
