@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int i,n,num,contadorp,contadori;
+    printf("Ingrese la cantidad de números: ");
+    scanf("%d",&n);
+    contadorp=0;
+    contadori=0;
+    for(i=1;i<=n;i=i+1)
+    {
+        printf("Ingrese el primer número: ",i);
+        scanf("%d",&num);
+        if(num % 2==0)
+        {
+            contadorp=contadorp+1;
+        }
+        else
+        {
+            contadori=contadori+1;
+        }
+    }
+    printf("La cantidad de números pares es: %d",contadorp);
+    printf("\nLa cantidad de números impares es: %d",contadori);
+    getch();
+    return 0;
+}
