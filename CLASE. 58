@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main() 
+{
+	int i;
+	i = 1;
+	while (i<=5) 
+	{
+		printf("HOLA\n");
+		i = i+1;
+	}
+	getch ();
+	return 0;
+}
